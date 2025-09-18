@@ -1,9 +1,0 @@
-输入:
-
-将图中的公式转换为latex
-
-输出:
-
-```latex
-\begin{align*}r_d(G):=\sum_{F\in\mathcal{F}_G^+}\frac{R_d(F)}{d_F^2},\end{align*}
-```

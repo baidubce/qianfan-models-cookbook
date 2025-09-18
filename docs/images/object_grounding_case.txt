@@ -1,7 +1,0 @@
-输入:
-
-Please provide the bounding box coordinate of the region this sentence describes: <ref>cat in the middle</ref>
-
-输出:
-
-<ref>cat in the middle</ref><box>[[416, 577, 694, 804]]</box>
