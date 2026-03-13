@@ -8,7 +8,7 @@ Note that this is a python code only repository.
 **2026.03.12**: [**Qianfan-OCR: A Unified End-to-End Model for Document Intelligence**](qianfan-ocr/qianfan_ocr_report.pdf) is released! Qianfan-OCR (4B+300M parameters) is now available on [Baidu AI Cloud](https://console.bce.baidu.com/qianfan) Open source weights coming soon!
 
 Qianfan-OCR is a unified end-to-end document intelligence model, designed to help enterprises achieve digital transformation and move towards intelligent automation. Key highlights:
-- **World Top-1 End-to-End OCR Model** on OmniDocBench v1.5.
+- **Top Performance End-to-End OCR Model** on OmniDocBench v1.5 and OlmOCRBench.
 - **General OCR**: Top model performance on OCRBench and OCRBench v2.
 - **Document Understanding**: Strong performance in document QA and information extraction.
 - **Layout-as-Thought**: For documents with complex layouts and non-standard reading orders, Qianfan-OCR can perform layout-analysis-level reasoning via a novel Layout-as-Thought mechanism, achieving superior recognition results.
