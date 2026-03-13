@@ -4,6 +4,15 @@
 
 请注意，这是一个仅包含Python代码的仓库。
 
+## Research / 项目索引
+
+本仓库同时作为 Qianfan research / blog / tech report / project page 的统一入口，便于持续收录后续项目内容。
+
+| 项目 | 类型 | 博客 | 论文 | 技术报告 | 项目页 | 仓库 | 说明 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Prefix Sampling | Blog / Research | [EN](research/prefix-sampling/README.md) \| [中文](research/prefix-sampling/README_CN.md) | - | - | - | - | 面向 Agentic RL 效率优化的博客 |
+| Qianfan-VL | Project / Tech Report | - | - | [技术报告](https://github.com/baidubce/Qianfan-VL/blob/main/docs/qianfan_vl_report_comp.pdf) | [项目页](https://baidubce.github.io/Qianfan-VL/) | [GitHub](https://github.com/baidubce/Qianfan-VL) | 视觉语言模型系列 |
+
 ## 最新动态
 
 **2025.09.22**: 百度智能云Qianfan-VL视觉语言模型系列现已开源！

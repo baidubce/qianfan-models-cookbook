@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" width="1400" height="980" style="background-color: #FFFFFF; font-family: Helvetica, Arial, sans-serif;">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#43A047"/>
+    </marker>
+</defs>
+
+  <rect x="0" y="0" width="1400" height="980" fill="#FFFFFF"/>
+  <g transform="translate(100,0)">
+
+  <!-- DataLoader -->
+  <rect x="10" y="377" width="150" height="70" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="85" y="412" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">DataLoader</text>
+
+  <!-- Arrow with N Rollout label -->
+  <path d="M 160 412 L 205 412" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)" />
+
+  <!-- Mixed Batch of Prompts -->
+  <rect x="210" y="366" width="155" height="90" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="288" y="384" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">Mixed Batch</text>
+
+  <rect x="228" y="402" width="20" height="20" fill="#04cfb0" rx="3"/>
+  <rect x="253" y="402" width="20" height="20" fill="#03cffc" rx="3"/>
+  <rect x="278" y="402" width="20" height="20" fill="#037bfc" rx="3"/>
+  <rect x="303" y="402" width="20" height="20" fill="#7f03fc" rx="3"/>
+  <rect x="328" y="402" width="20" height="20" fill="#c505ff" rx="3"/>
+
+  <text x="288" y="442" font-size="13px" fill="#666666" text-anchor="middle" dominant-baseline="middle">batch_size of prompts</text>
+
+  <!-- Shared trunk then branch arrows from Mixed Batch to categories -->
+  <path d="M 365 412 L 500 412" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 500 102 L 500 722" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 500 102 L 540 102" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 500 257 L 540 257" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 500 412 L 540 412" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 500 567 L 540 567" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 500 722 L 540 722" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- All-Fail (0%) -->
+  <rect x="545" y="30" width="210" height="145" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="650" y="50" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">All-Fail (0%)</text>
+  <rect x="555" y="65" width="20" height="20" fill="#04cfb0" rx="3"/> <rect x="585" y="65" width="160" height="20" fill="#E53935" rx="3"/>
+  <rect x="555" y="90" width="20" height="20" fill="#04cfb0" rx="3"/> <rect x="585" y="90" width="160" height="20" fill="#E53935" rx="3"/>
+  <rect x="555" y="115" width="20" height="20" fill="#04cfb0" rx="3"/> <rect x="585" y="115" width="160" height="20" fill="#E53935" rx="3"/>
+  <rect x="555" y="140" width="20" height="20" fill="#04cfb0" rx="3"/> <rect x="585" y="140" width="160" height="20" fill="#E53935" rx="3"/>
+
+  <!-- All-Pass (100%) -->
+  <rect x="545" y="185" width="210" height="145" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="650" y="205" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">All-Pass (100%)</text>
+  <rect x="555" y="220" width="20" height="20" fill="#03cffc" rx="3"/> <rect x="585" y="220" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="245" width="20" height="20" fill="#03cffc" rx="3"/> <rect x="585" y="245" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="270" width="20" height="20" fill="#03cffc" rx="3"/> <rect x="585" y="270" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="295" width="20" height="20" fill="#03cffc" rx="3"/> <rect x="585" y="295" width="160" height="20" fill="#43A047" rx="3"/>
+
+  <!-- Normal (30%-70%) -->
+  <rect x="545" y="340" width="210" height="145" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="650" y="360" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">Normal (30%-70%)</text>
+  <rect x="555" y="375" width="20" height="20" fill="#037bfc" rx="3"/> <rect x="585" y="375" width="160" height="20" fill="#E53935" rx="3"/>
+  <rect x="555" y="400" width="20" height="20" fill="#037bfc" rx="3"/> <rect x="585" y="400" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="425" width="20" height="20" fill="#037bfc" rx="3"/> <rect x="585" y="425" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="450" width="20" height="20" fill="#037bfc" rx="3"/> <rect x="585" y="450" width="160" height="20" fill="#E53935" rx="3"/>
+
+  <!-- Too-Easy (70%-100%) -->
+  <rect x="545" y="495" width="210" height="145" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="650" y="515" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">Too-Easy (70%-100%)</text>
+  <rect x="555" y="530" width="20" height="20" fill="#7f03fc" rx="3"/> <rect x="585" y="530" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="555" width="20" height="20" fill="#7f03fc" rx="3"/> <rect x="585" y="555" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="580" width="20" height="20" fill="#7f03fc" rx="3"/> <rect x="585" y="580" width="160" height="20" fill="#43A047" rx="3"/>
+  <rect x="555" y="605" width="20" height="20" fill="#7f03fc" rx="3"/> <rect x="585" y="605" width="160" height="20" fill="#E53935" rx="3"/>
+
+  <!-- Too-Hard (0%-30%) -->
+  <rect x="545" y="650" width="210" height="145" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="650" y="670" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">Too-Hard (0%-30%)</text>
+  <rect x="555" y="685" width="20" height="20" fill="#c505ff" rx="3"/> <rect x="585" y="685" width="160" height="20" fill="#E53935" rx="3"/>
+  <rect x="555" y="710" width="20" height="20" fill="#c505ff" rx="3"/> <rect x="585" y="710" width="160" height="20" fill="#E53935" rx="3"/>
+  <rect x="555" y="735" width="20" height="20" fill="#c505ff" rx="3"/> <rect x="585" y="735" width="160" height="20" fill="#E53935" rx="3"/>
+  <rect x="555" y="760" width="20" height="20" fill="#c505ff" rx="3"/> <rect x="585" y="760" width="160" height="20" fill="#43A047" rx="3"/>
+
+  <!-- Discard box -->
+  <rect x="870" y="145" width="150" height="70" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="945" y="180" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">Discard</text>
+
+  <!-- Fork-style arrows to Discard -->
+  <path d="M 755 102 L 820 102" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 755 257 L 820 257" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 820 102 L 820 257" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 820 180 L 865 180" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- RL Train box -->
+  <rect x="870" y="377" width="150" height="70" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="945" y="412" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">RL Train</text>
+
+  <!-- Fork-style arrows to RL Train -->
+  <path d="M 755 412 L 820 412" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 755 567 L 820 567" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 755 722 L 820 722" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 820 412 L 820 722" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M 820 412 L 865 412" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Prefix & Mask box with split bars -->
+  <rect x="870" y="550" width="230" height="190" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="2" rx="8"/>
+  <text x="985" y="575" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">Prefix &amp; Mask</text>
+  <text x="985" y="597" font-size="16px" fill="#000000" text-anchor="middle" dominant-baseline="middle">(Adaptive Prefix)</text>
+
+  <!-- Split bar examples inside Prefix box -->
+  <rect x="890" y="620" width="20" height="20" fill="#7f03fc" rx="3"/>
+  <rect x="920" y="620" width="60" height="20" fill="#E53935" rx="3"/>
+  <rect x="980" y="620" width="100" height="20" fill="none" stroke="#E53935" stroke-width="2" stroke-dasharray="4,2" rx="3"/>
+
+  <rect x="890" y="655" width="20" height="20" fill="#c505ff" rx="3"/>
+  <rect x="920" y="655" width="110" height="20" fill="#43A047" rx="3"/>
+  <rect x="1030" y="655" width="50" height="20" fill="none" stroke="#43A047" stroke-width="2" stroke-dasharray="4,2" rx="3"/>
+
+  <text x="985" y="702" font-size="14px" fill="#666666" text-anchor="middle" dominant-baseline="middle">Solid = Prefix Selected &amp; Masked</text>
+  <text x="985" y="724" font-size="14px" fill="#666666" text-anchor="middle" dominant-baseline="middle">Dotted = Discarded Trajectories</text>
+
+  <!-- Green arrows from Too-Easy and Too-Hard to Prefix box -->
+  <path d="M 745 615 C 810 615, 810 655, 865 655" fill="none" stroke="#43A047" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M 745 770 C 810 770, 810 655, 865 655" fill="none" stroke="#43A047" stroke-width="2" marker-end="url(#arrow-green)"/>
+
+  <!-- Green feedback loop from Prefix box back to Mixed Batch -->
+  <path d="M 985 740 L 985 855 L 288 855 L 288 456" fill="none" stroke="#43A047" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="585" y="837" font-size="16px" fill="#43A047" text-anchor="middle" font-weight="bold" dominant-baseline="middle">Inject Prompts &amp; Prefixes to next batch</text>
+  <text x="432" y="362" font-size="16px" fill="#000000" text-anchor="middle" font-weight="bold" dominant-baseline="middle">N Rollout</text>
+  <text x="432" y="384" font-size="16px" fill="#000000" text-anchor="middle" dominant-baseline="middle">(Prefix Replay)</text>
+
+  <!-- Workflow legend -->
+  <line x1="285" y1="929" x2="303" y2="929" stroke="#333333" stroke-width="3"/>
+  <polygon points="303,924 313,929 303,934" fill="#333333"/>
+  <text x="325" y="929" font-size="15px" fill="#333333" text-anchor="start" dominant-baseline="middle">Black arrows = Normal RL workflow</text>
+  <line x1="655" y1="929" x2="673" y2="929" stroke="#43A047" stroke-width="3"/>
+  <polygon points="673,924 683,929 673,934" fill="#43A047"/>
+  <text x="695" y="929" font-size="15px" fill="#43A047" text-anchor="start" dominant-baseline="middle">Green arrows = Prefix sampling workflow</text>
+
+  <rect x="285" y="950" width="30" height="14" fill="#E53935" rx="2"/>
+  <text x="325" y="957" font-size="15px" fill="#E53935" text-anchor="start" dominant-baseline="middle">Red bar = failed trajectory</text>
+  <rect x="655" y="950" width="30" height="14" fill="#43A047" rx="2"/>
+  <text x="695" y="957" font-size="15px" fill="#43A047" text-anchor="start" dominant-baseline="middle">Green bar = passed trajectory</text>
+
+  </g>
+</svg>
